@@ -20,6 +20,8 @@ while True:
 
     if int(choice) > random_n:
         choice = input("Too big! Guess again! ")
+        guesses+=1
     else:
         choice = input("Too small! Guess again! ")
+        guesses+=1
  
