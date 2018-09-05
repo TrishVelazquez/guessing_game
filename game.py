@@ -18,7 +18,8 @@ while True:
         print("You won! You had {} tries".format(guesses))
         break
 
-    if int(choice) != random_n:
-        choice = input("Guess again! ")
-
-
+    if int(choice) > random_n:
+        choice = input("Too big! Guess again! ")
+    else:
+        choice = input("Too small! Guess again! ")
+ 
